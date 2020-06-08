@@ -1,0 +1,118 @@
+-- INTRO CLIP --
+
+Hello, OHBM 2020 Open Science Room!
+
+I'm here with an update on the MNE-Python project.
+
+
+-- OVERVIEW --
+
+
+MNE-Python is an advanced analysis package for
+time series neuroimaging data, such as: MEG, EEG, ECoG and fNIRS.
+
+Whatever your needs are for preprocessing your data,
+chances are good that MNE-Python can do it. For example:
+
+Annotate bad segments
+
+Bad channels
+
+or bad epochs
+
+MNE-Python now contains a complete implementation of MEG-IN's maxfilter
+
+Perform Independent Component Analysis to clean eye- and heart-artifacts
+
+Cut epochs and annotate them with metadata
+
+Study evoked activity. Any. Way. You. Like.
+
+And when it's time to localize the origin of your signal in the brain...
+
+Perform coregistration between your sensors and an MRI scan
+
+Construct B-E-M models from your FreeSurfer meshes
+
+Define a source space...
+
+...and compute the Leadfield!
+
+And when it comes to the actual source localization...
+
+There. Are. So. Many. Ways. To. Do. It.
+
+Use cluster permutation testing for group level statistics
+
+And. So. Much. More!
+
+
+-- WHATS NEW --
+
+Now, let's take a look at what we've been adding since last we saw each other at OHBM.
+
+We've implemented the missing pieces to make our *open-source* maxfilter implementation
+just as good as the commercial MEG-IN version.
+
+Meaning:
+
+We now support continuous head position tracking and correcting for it.
+
+And you can use maxfilter for automatic bad channel detection.
+
+Our coregistration GUI has gotten some love as well.
+It will now attempt to automatically localize the Fiducial points on the MRI.
+It doesn't always work, but when it does, co-registration can be done completely automatic!
+
+Our topomap plots are looking better then ever.
+We've overhauled how we detect the head position and deal with subsets of sensors.
+
+And speaking of sensors, you can now visualize sensor-to-sensor connectivity in 3D
+
+We support more file formats then ever. Including:
+Curry files,
+the new NYU 2019 Kit system,
+and importing independant component decompositions from EEGLAB.
+
+We are also faster then ever, with speed improvements all over the codebase.
+
+And finally, there's one more thing...
+
+-- Types `mne.viz.set_3d_backend('pyvista')` --
+
+A completely new visualizer for source activity, based on PyVista.
+
+Scroll through time, or just press spacebar to play it as a movie
+
+Quickly adjust the color thresholds.
+
+And click on any vertex and get a plot of the time course.
+
+
+-- COMMUNITY --
+
+But MNE-Python is more than just a fantastic piece of software.
+
+We are a community of scientists, sharing our expertise so that every one of us benefits.
+Every time we solve a problem or find a better way to do things, all of our analysis pipelines improve a little.
+
+Our GitHub page is always buzzing with issues and pull-requests.
+Come take a look and see what we are working on next. 
+
+Even better, please join in!
+We encourage everyone to file new bug reports and contribute pull requests with new features.
+Alex and Eric are usually the quickest to respond.
+
+Become a contributer to MNE-Python!
+You will improve your programming skills,
+You will make new friends,
+And you will find that when you put in the effort to help others,
+others will gladly put in effort to help you.
+
+You don't have to solve every problem by yourself.
+Come join us!
+
+
+-- MNE-Python --
+If you want to go fast, go alone.
+If you want to go far, go together.

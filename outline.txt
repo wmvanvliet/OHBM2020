@@ -1,0 +1,58 @@
+MNE-Python: past, present and future
+
+Introduction: what is MNE-Python?
+        - What can it do for you?
+	  - Sensor level:
+	    - Annotate bad data interactively
+	    - Maxfilter
+	    - ICA to remove EOG and ECG
+	    - Epochs with metadata
+	    - Plot evokeds:
+	      - plot_joint
+	      - plot_topomap
+	      - plot_topo
+	      - plot_fields
+	      - time-frequency analysis
+
+	  - Source level:
+	    - Coregistration UI
+	    - Make BEM models: plot_alignment
+	    - Define source space
+            - Compute leadfields (https://github.com/mne-tools/dipole-simulator)
+	    - Compute inverse:
+	      - MNE/MNE-dSPM/MNE-SLoreta/Sparse MNE
+	      - LCMV beamformer
+	      - DICS beamformer
+	      - RAP Music
+	      - Dipole fit
+
+	  - Statistics and decoding
+	    - Cluster permutation tests
+	    - Time generalization
+	    - XDAWN
+
+	  - Simulate data
+	  
+	- Getting started:
+	  - overhauled tutorials
+	  - tons of examples
+	  - detailed API documentation
+
+Notable features added since last OHBM:
+	- Continuous HPI tracking
+	- Automatic bad channel detection
+	- Automatically estimate MRI fiducials. In some cases, coregistration can be done completely automatic!
+	- Our topomap plots are looking better then ever. We've overhauled how the sensor locations are arranged around the head.
+	- Compute source power directly from a covariance matrix.
+	- Plot sensor level connectivity in 3D
+	- Speed improvements across the codebase
+	- We support more file formats then ever. Including Curry files and the new NYU 2019 Kit system and reading ICA decompositions from EEGLAB.
+	- One more thing...
+	  - Pyvista backend
+	  - New brain viz
+
+MNE-Python is more than just a piece of software: it's a community.
+We welcome you to become part of it.
+	- Mailing list
+	- Issues
+	- PRs

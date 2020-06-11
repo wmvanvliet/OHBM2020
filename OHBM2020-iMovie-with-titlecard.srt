@@ -1,311 +1,323 @@
 ﻿1
+00:00:10,000 --> 00:00:15,000
+Presentation will begin in 30 seconds.
+
+2
+00:00:20,000 --> 00:00:25,000
+Presentation will begin in 20 seconds.
+
+3
+00:00:30,000 --> 00:00:35,000
+Presentation will begin in 10 seconds.
+
+4
 00:01:07,847 --> 00:01:10,847
 Hello OHBM 2020 Open Science Room!
 
-2
+5
 00:01:11,200 --> 00:01:15,036
 I'm here with an update on the
 MNE-Python project
 
-3
+6
 00:01:16,112 --> 00:01:21,591
 MNE-Python is an advanced analysis package
 for time series neuroimaging data
 
-4
+7
 00:01:21,607 --> 00:01:27,600
 such as MEG, EEG, ECoG and fNIRS.
 
-5
+8
 00:01:29,345 --> 00:01:31,956
 Whatever your needs are for
 pre-processing your data
 
-6
+9
 00:01:31,981 --> 00:01:35,222
 chances are good that MNE-Python can do it.
 
-7
+10
 00:01:38,054 --> 00:01:41,101
 Let's take a look at some of the things it can do...
 
-8
+11
 00:01:41,126 --> 00:01:43,954
 We can annotate bad channels
 
-9
+12
 00:01:46,523 --> 00:01:48,523
 bad segments
 
-10
+13
 00:01:51,989 --> 00:01:53,989
 bad epochs
 
-11
+14
 00:01:58,071 --> 00:02:04,885
 and MNE-Python now contains a complete
 implementation of MEG-IN's maxfilter.
 
-12
+15
 00:02:08,548 --> 00:02:10,777
 You can compute independent components
 
-13
+16
 00:02:10,814 --> 00:02:13,587
 so you can get rid of eye and heart artifacts
 
-14
+17
 00:02:15,987 --> 00:02:17,987
 cut epochs
 
-15
+18
 00:02:20,027 --> 00:02:22,027
 annotate them with meta-data
 
-16
+19
 00:02:23,137 --> 00:02:24,894
 and study evoked activity
 
-17
+20
 00:02:24,919 --> 00:02:28,515
 Any. Way. You. Like.
 
-18
+21
 00:02:30,408 --> 00:02:34,025
 And when it's time to localize
 the actual sources in the brain...
 
-19
+22
 00:02:34,466 --> 00:02:39,333
 Perform co-registration between
 your sensors and an MRI scan.
 
-20
+23
 00:02:41,448 --> 00:02:43,448
 Construct BEM models.
 
-21
+24
 00:02:44,262 --> 00:02:46,262
 Define a source space.
 
-22
+25
 00:02:47,438 --> 00:02:50,102
 And compute the lead field.
 
-23
+26
 00:02:50,715 --> 00:02:53,272
 And when it comes to the
 actual source localization...
 
-24
+27
 00:02:58,002 --> 00:03:03,384
 There are so many ways to do it!
 
-25
+28
 00:03:04,629 --> 00:03:08,731
 Use cluster permutation testing
 for group level statistics.
 
-26
+29
 00:03:08,833 --> 00:03:11,926
 And so much more!
 
-27
+30
 00:03:15,095 --> 00:03:18,063
 Now, let's take a look at what we've been adding
 
-28
+31
 00:03:18,118 --> 00:03:20,703
 since last we saw each other at OHBM.
 
-29
+32
 00:03:21,465 --> 00:03:23,383
 We've implemented the missing pieces
 
-30
+33
 00:03:23,383 --> 00:03:26,332
 to make our open source maxfilter implementation
 
-31
+34
 00:03:26,349 --> 00:03:29,317
 just as good as the commercial MEG-IN version
 
-32
+35
 00:03:29,757 --> 00:03:33,933
 And this means we now support
 continuous head position tracking
 
-33
+36
 00:03:33,933 --> 00:03:35,933
 and correct for it.
 
-34
+37
 00:03:38,065 --> 00:03:43,791
 You can use maxfilter for automatic
 bad channel detection of your MEG data.
 
-35
+38
 00:03:44,938 --> 00:03:48,131
 Our co-registration GUI
 has gotten some love as well.
 
-36
+39
 00:03:48,131 --> 00:03:52,734
 It will now attempt to automatically detect
 the MRI fiducials.
 
-37
+40
 00:03:53,174 --> 00:03:55,284
 It doesn't always work,
 but when it does
 
-38
+41
 00:03:55,284 --> 00:03:59,102
 your co-registration can be performed
 completely automatic.
 
-39
+42
 00:04:00,861 --> 00:04:03,526
 Our topomap plots are looking better then ever.
 
-40
+43
 00:04:03,658 --> 00:04:08,718
 We've overhauled how we detect the head position
 and deal with subsets of sensors.
 
-41
+44
 00:04:08,804 --> 00:04:10,189
 And speaking of sensors...
 
-42
+45
 00:04:10,189 --> 00:04:13,815
 You can now visualize
 sensor-to-sensor connectivity in 3D.
 
-43
+46
 00:04:14,418 --> 00:04:17,270
 We also support more file formats than ever.
 
-44
+47
 00:04:17,403 --> 00:04:19,182
 Including: Curry files...
 
-45
+48
 00:04:19,182 --> 00:04:22,432
 The new NYU 2019 KIT system...
 
-46
+49
 00:04:22,465 --> 00:04:26,806
 And we can import independent components
 straight from EEGLAB.
 
-47
+50
 00:04:27,011 --> 00:04:28,690
 We're also faster than ever
 
-48
+51
 00:04:28,715 --> 00:04:32,038
 with speed improvements all over the code base.
 
-49
+52
 00:04:32,851 --> 00:04:35,211
 And finally... there's one more thing...
 
-50
+53
 00:04:41,877 --> 00:04:47,041
 A completely new visualizer for source activity,
 based on PyVista!
 
-51
+54
 00:04:48,749 --> 00:04:51,892
 You can scroll smoothly through time
 
-52
+55
 00:04:52,913 --> 00:04:56,051
 or just press the spacebar to play it as a movie.
 
-53
+56
 00:04:56,956 --> 00:04:59,783
 You can quickly adjust color thresholds.
 
-54
+57
 00:05:00,927 --> 00:05:06,497
 And click on any vertex
 to get a plot of the time course.
 
-55
+58
 00:05:14,183 --> 00:05:18,129
 But MNE-Python is more than
 just a fantastic piece of software.
 
-56
+59
 00:05:18,455 --> 00:05:21,721
 Above all, we are a community of scientists
 
-57
+60
 00:05:21,932 --> 00:05:25,721
 sharing our expertise,
 so that every one of us benefits.
 
-58
+61
 00:05:25,923 --> 00:05:29,628
 Every time we solve a problem,
 or find a better way to do things
 
-59
+62
 00:05:29,690 --> 00:05:32,636
 all of our analysis pipelines improve a little.
 
-60
+63
 00:05:32,745 --> 00:05:37,441
 Our GitHub page is always buzzing
 with issues and pull requests.
 
-61
+64
 00:05:37,782 --> 00:05:40,555
 Come take a look
 and see what we're working on next!
 
-62
+65
 00:05:40,648 --> 00:05:42,930
 Even better: please join in!
 
-63
+66
 00:05:43,073 --> 00:05:48,514
 We encourage everyone to file new bug reports
 and contibute pull requests with new features.
 
-64
+67
 00:05:48,608 --> 00:05:51,792
 Alex and Eric are usually
 the first ones to respond.
 
-65
+68
 00:05:52,043 --> 00:05:54,228
 Become a contributer to MNE-Python
 
-66
+69
 00:05:54,228 --> 00:05:56,099
 and you will improve your programming skills
 
-67
+70
 00:05:56,099 --> 00:05:57,460
 you will make new friends
 
-68
+71
 00:05:57,485 --> 00:06:01,004
 and you will find that when you put in some effort
 to help other people
 
-69
+72
 00:06:01,105 --> 00:06:03,968
 others will gladly put in effort to help you.
 
-70
+73
 00:06:04,631 --> 00:06:08,318
 You don't have to solve every problem by yourself.
 
-71
+74
 00:06:08,594 --> 00:06:10,544
 Come join us!
 
